@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+    
+    <style>
+
+        *{
+            margin: 0;
+        }
+
+    </style>
+   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+        <div id="root">  </div>
+
+        <script type="text/babel"> 
+        function Header(){
+
+        return <div style={{backgroundColor:"black",height:"60px",color:"white",display:"flex"}}>  
+            <div style={{width:"60%",paddingLeft:"10px",display:"flex",justifyContent:"left",alignItems:"center"}}> 
+                 <h2 style={{fontFamily: 'DynaPuff'}}>LOGO</h2>
+                </div>
+            <div style={{width:"40%",display:"flex",justifyContent:"right",alignItems:"center"}}> 
+                 <a href="#" style={{color:"white",backgoundColor:"#ff99cc",marginRight:"40px",textDecoration:"none"}}>HOME</a>
+                 <a href="#" style={{color:"white",marginRight:"40px",textDecoration:"none"}}>ABOUT</a>
+                 <a href="#" style={{color:"white",marginRight:"40px",textDecoration:"none"}}>MENU</a>
+                 <a href="#" style={{color:"white",marginRight:"40px",textDecoration:"none"}}>CONTACT</a>
+                </div>
+            </div>
+        }
+
+        const homeStyle = {
+             width: '100%',
+             height: '90vh',
+             backgroundImage: 'url("https://static.vecteezy.com/system/resources/previews/007/011/854/large_2x/beautiful-landscape-illustration-peaceful-vector.jpg")',
+             backgroundRepeat: 'no-repeat',
+             backgroundSize: 'cover',
+           };
+
+ <div style={homeStyle}></div>
+        function Main(){
+            return <div style={{height:"500px"}}>
+                <div style={homeStyle}>
+                <div style={{display:"flex",height:"500px",flexDirection:"column",justifyContent:"10px",alignItems:"center"}}>
+                <h1 style={{margin:"12px 0px"}}>Home</h1>
+               </div>
+                </div>
+                </div>
+        }
+
+        function Footer(){
+
+             return <div style={{height:"5px",color:"white",textAlign:"center"}}>
+                    <h2>Made with by <i class="bi bi-heart-fill"></i> by Learning Robo</h2>      
+                </div>
+        }
+          function App(){
+            //  Component rendered
+             return <div style={{}}> 
+                <Header /> 
+                 <Main />
+                 <Footer />
+                </div>
+          }
+        
+        ReactDOM.render(<App />,document.getElementById('root'))
+        
+        
+        </script>
+</body>
+</html>
